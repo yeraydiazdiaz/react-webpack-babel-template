@@ -1,9 +1,9 @@
 module.exports = {
-    "extends": "standard",
-    "plugins": ["react"],
-    "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      }
+  "extends": ["standard", "plugin:react/recommended"],
+  "plugins": ["react"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     }
+  }
 };
