@@ -1,5 +1,5 @@
-const merge = require('webpack-merge');
-const base = require('./webpack.config.base.js');
+const merge = require('webpack-merge')
+const base = require('./webpack.config.base.js')
 
 module.exports = merge(base, {
   devtool: 'inline-source-map',
@@ -7,4 +7,4 @@ module.exports = merge(base, {
     contentBase: './dist',
     hot: true
   }
-});
+})

@@ -8,7 +8,8 @@ import ReactDOM from 'react-dom'
 import BasicComponent from './components/basicComponent'
 
 const rootElement = document.getElementById('app')
-const config = JSON.parse(rootElement.getAttribute('data'))
+const data = rootElement.getAttribute('data')
+const config = data ? JSON.parse(data) : {}
 
 ReactDOM.render(
   <BasicComponent {...config} />,
