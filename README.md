@@ -8,3 +8,4 @@ A simple setup for React apps with minimal setup to get started quickly.
 - `npm install`
 - `npm run dev-watch`, will run webpack on watch mode
 - When you're done `npm run build`, bundled files will be placed in `dist`
+- Open `dist/index.html` to see the component in context
