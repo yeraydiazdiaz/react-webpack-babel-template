@@ -14,3 +14,8 @@ To use webpack's development server with hot reloading:
 
 - `npm run start`
 - navigate to `http://localhost:8080/`
+
+Run tests:
+
+- Once with `npm test`
+- On watch mode `npm run test-watch`
