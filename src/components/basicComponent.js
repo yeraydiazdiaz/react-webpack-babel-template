@@ -7,14 +7,23 @@ import React from 'react'
 export default class BasicComponent extends React.Component {
   constructor (props) {
     super(props)
-    // typically we'd bind methods here
+    this.state = {
+      value: 0
+    }
+    this.addOne = this.addValue.bind(this, 1)
+    this.substractOne = this.addValue.bind(this, -1)
   }
 
-  componentDidMount () {
-    // Initialisation code
+  addValue (n) {
+    this.setState({value: this.state.value + n})
   }
 
   render () {
-    return <div>A basic component</div>
+    return <div>
+      <h2>A basic component</h2>
+      <p>{this.state.value}</p>
+      <button onClick={this.addOne}>+</button>
+      <button onClick={this.substractOne}>-</button>
+    </div>
   }
 };
