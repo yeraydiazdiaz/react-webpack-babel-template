@@ -1,0 +1,26 @@
+@import 'variables.scss';
+
+body {
+    font-family: $font-family;
+    background-color: $bg-color;
+    color: $text-primary;
+    padding: 2em;
+}
+
+h1 {
+    color: $hero-color;
+}
+
+.basic-component {
+
+    .value {
+        padding-right: 0.5em;
+        font-size: 2em;
+    }
+
+    button {
+        height: 3em;
+        width: 3em;
+        margin-right: 1em;
+    }
+}

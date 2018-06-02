@@ -19,11 +19,13 @@ export default class BasicComponent extends React.Component {
   }
 
   render () {
-    return <div>
+    return <div className="basic-component">
       <h2>A basic component</h2>
-      <p>{this.state.value}</p>
-      <button onClick={this.addOne}>+</button>
-      <button onClick={this.substractOne}>-</button>
+      <p>
+        <span className="value">{this.state.value}</span>
+        <button onClick={this.addOne}>+</button>
+        <button onClick={this.substractOne}>-</button>
+      </p>
     </div>
   }
 };
