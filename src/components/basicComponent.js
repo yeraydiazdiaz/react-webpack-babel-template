@@ -3,8 +3,9 @@
  */
 
 import React from 'react'
+import { hot } from 'react-hot-loader'
 
-export default class BasicComponent extends React.Component {
+class BasicComponent extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -21,9 +22,13 @@ export default class BasicComponent extends React.Component {
   render () {
     return <div>
       <h2>A basic component</h2>
-      <p>{this.state.value}</p>
-      <button onClick={this.addOne}>+</button>
-      <button onClick={this.substractOne}>-</button>
+      <p>
+        <span style={{marginRight: '2em'}}>{this.state.value}</span>
+        <button onClick={this.addOne}>+</button>
+        <button onClick={this.substractOne}>-</button>
+      </p>
     </div>
   }
-};
+}
+
+export default hot(module)(BasicComponent)

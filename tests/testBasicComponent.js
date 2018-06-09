@@ -7,7 +7,7 @@ import BasicComponent from '../src/components/basicComponent'
 describe('<BasicComponent />', () => {
   it('starts with value == 0', () => {
     const wrapper = shallow(<BasicComponent />)
-    expect(wrapper.find('p').text()).to.equal('0')
+    expect(wrapper.find('p span').text()).to.equal('0')
   })
 
   it('has two buttons reading + and -', () => {
@@ -22,7 +22,7 @@ describe('<BasicComponent />', () => {
     it('increases value by 1', () => {
       const wrapper = shallow(<BasicComponent />)
       wrapper.find('button').first().simulate('click')
-      expect(wrapper.find('p').text()).to.equal('1')
+      expect(wrapper.find('p span').text()).to.equal('1')
     })
   })
 
@@ -30,7 +30,7 @@ describe('<BasicComponent />', () => {
     it('decreases value by 1', () => {
       const wrapper = shallow(<BasicComponent />)
       wrapper.find('button').last().simulate('click')
-      expect(wrapper.find('p').text()).to.equal('-1')
+      expect(wrapper.find('p span').text()).to.equal('-1')
     })
   })
 })
