@@ -22,15 +22,17 @@
   "babel": {
     "presets": [
       "@babel/preset-env",
-      "react"
+      "@babel/react"
     ],
-    "plugins": ["react-hot-loader/babel"]
+    "plugins": [
+      "react-hot-loader/babel"
+    ]
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
+    "@babel/preset-react": "^7.0.0-beta.46",
     "babel-loader": "^8.0.0-beta.2",
-    "babel-preset-react": "^7.0.0-beta.3",
     "chai": "^3.0.0",
     "chai-enzyme": "^0.8.0",
     "cheerio": "^0.19.0",

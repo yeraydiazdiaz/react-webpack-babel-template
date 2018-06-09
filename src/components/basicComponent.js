@@ -11,8 +11,6 @@ class BasicComponent extends React.Component {
     this.state = {
       value: 0
     }
-    this.addOne = this.addValue.bind(this, 1)
-    this.substractOne = this.addValue.bind(this, -1)
   }
 
   addValue (n) {
@@ -23,9 +21,9 @@ class BasicComponent extends React.Component {
     return <div>
       <h2>A basic component</h2>
       <p>
-        <span style={{marginRight: '2em'}}>{this.state.value}</span>
-        <button onClick={this.addOne}>+</button>
-        <button onClick={this.substractOne}>-</button>
+        <span style={{marginRight: '5em'}}>{this.state.value}</span>
+        <button onClick={this.addValue.bind(this, 1)}>+</button>
+        <button onClick={this.addValue.bind(this, -1)}>-</button>
       </p>
     </div>
   }
