@@ -1,2 +1,14 @@
 node_modules
+__pycache__/
+
 dist/bundle.*
+# Pact
+backend/log
+backend/reports
+backend/tmp
+pacts/
+logs/
+
+.vscode/
+*.code*
+.python-version
