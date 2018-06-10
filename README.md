@@ -29,11 +29,11 @@ In this example we use PactJS to create a contract for the front end Consumer ap
 To verify the contract:
 
 1. Run `npm test` to create a Pact contract in the `pacts` directory
-2. Start up the server `FLASK_APP=app flask run`
+2. Start up the server `FLASK_APP=backend PACT_PROVIDER_STATE=1 flask run`
 3. In a separate terminal
 ```
-pact-verifier
-    --provider-base-url=http://localhost:5000
-    --pact-url=../pacts/todoapp-todoservice.json
-    --provider-states-setup-url=http://localhost:5000/todos/
+pact-verifier \
+    --provider-base-url=http://localhost:5000 \
+    --pact-url=../pacts/todoapp-todoservice.json \
+    --provider-states-setup-url=http://localhost:5000/setup/
 ```
