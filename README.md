@@ -1,6 +1,6 @@
 # Basic React + Webpack + Babel template
 
-A simple setup for React apps with minimal setup to get started quickly.
+A simple setup for React apps with minimal setup to get started quickly and test setup using Mocha + Enzyme + Karma.
 
 ## Development
 

@@ -16,7 +16,7 @@
     "test": "karma start",
     "test-watch": "karma start --auto-watch --no-single-run"
   },
-  "keywords": [],
+  "keywords": ["react", "webpack", "babel", "karma", "mocha", "enzyme"],
   "author": "Yeray Diaz Diaz",
   "license": "MIT",
   "babel": {
